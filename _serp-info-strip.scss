@@ -1,0 +1,145 @@
+@include breakpoint(when-desktop) {
+  .info-row {
+    .breadcrumb {
+      padding:0 0 15px 0;
+      ul li {
+        float:left;
+        span{
+          padding:0 5px;
+        }
+      }
+    }
+    .price-db {
+      width:100%;
+      min-height:123px;
+      overflow:hidden;
+      @include desktop-blue-gradient();
+      @include border-radius(2px);
+    }
+    .price-db-inner {
+      padding:21px 0 0 20px;
+      overflow: hidden;
+    }
+    .small-txt{
+      font-size:16px;
+    }
+    .dymanic-number {
+      font-size: 24px;
+    }
+    .sales-timigs {
+      font-size:12px;
+      padding-left:6px;
+      line-height:12px;
+    }
+    .serp-call-now {
+      top:-4px;
+    }
+    .separater {
+      width:2px;
+      height:19px;
+      margin:0 10px;
+    }
+    .donut-chat{
+      width:120px;
+      height:85px;
+    }
+    .chat-info {
+      padding:20px 0 0 20px;
+      line-height:24px;
+
+    }
+    .txt-medium {
+      font-size:18px;
+    }
+    .txt-small {
+      font-size:15px;
+    }
+  }
+}
+
+@include breakpoint(when-landscape-tablet) {
+  .info-row {
+    .price-db {
+
+    }
+}
+}
+@include breakpoint(when-portrait-tablet) {
+  .info-row {
+    .price-db {
+      min-height:100px;
+    }
+    .donut-chat {
+      width:90px;
+      img {
+        width:100%;
+      }
+    }
+    .txt-medium {
+      font-size:15px;
+    }
+    .txt-small {
+      font-size:13px;
+    }
+    .chat-info {
+      padding: 8px 0 0 20px;
+    }
+    .breadcrumb {
+      padding:0 0 23px 0;
+    }
+  }
+}
+
+
+
+@include breakpoint(mobile) {
+  .info-row {
+    padding:25px 0 16px 0;
+    .breadcrumb {
+      ul li {
+        float:left;
+        span{
+          padding:0 5px;
+        }
+      }
+      ul {
+        &:before, &:after {
+          content:'';
+          display:block;
+          clear:both;
+         }
+      }
+    }
+    .price-db {
+      display:none;
+    }
+  }
+  .serp {
+    .mobile-widget-db {
+        @include mobile-blue-gradient();
+        @include dtable-no-padding();
+        padding:25px;
+        .chat-info {
+          padding-left:25px;
+          top:-5px;
+        }
+        .served-status {
+          line-height:15px;
+        }
+        .count {
+          font-size:20px;
+        }
+        .count-label {
+          font-size:11px;
+        }
+        .txt-medium {
+          font-size:15px;
+          line-height:19px;
+        }
+        .txt-small {
+          font-size:13px;
+          padding-top:20px;
+        }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@font-face{
+    font-family:'teletext-holidays';
+    src:url('https://resources.teletextholidays.co.uk/drupal/fonts/icons/teletext-holidays.eot?hmcrf');
+    src:url('https://resources.teletextholidays.co.uk/drupal/fonts/icons/teletext-holidays.eot?hmcrf#iefix') format('embedded-opentype'),url('https://resources.teletextholidays.co.uk/drupal/fonts/icons/teletext-holidays.ttf?hmcrf') format('truetype'),url('https://resources.teletextholidays.co.uk/drupal/fonts/icons/teletext-holidays.woff?hmcrf') format('woff'),url('https://resources.teletextholidays.co.uk/drupal/fonts/icons/teletext-holidays.svg?hmcrf#teletext-holidays') format('svg');
+    font-weight:normal;
+    font-style:normal
+}
+.tth{
+    font-family:'teletext-holidays';
+    speak:none;
+    font-style:normal;
+    font-weight:normal;
+    font-variant:normal;
+    text-transform:none;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    display:inline-block;
+    vertical-align:middle
+}
+.icon-app:before{
+    content:"\e901"
+}
