@@ -1,0 +1,48 @@
+.slider-bars {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+  right:0;
+  left:0;
+  bottom:34px;
+  z-index:0;
+  margin:auto;
+  width:211px;
+  span {
+    width:25px;
+    height:20px;
+    background-color:$bgnd-cornflower-blue;
+    align-self:flex-end;
+    opacity:0.1;
+    &:after {
+      content:'';
+      position:absolute;
+      bottom:-17px;
+      left:0;
+      right:0;
+      margin:auto;
+      width:3px;
+      height:3px;
+      background:$bgnd-black;
+      @include border-radius(100px);
+    }
+  }
+  .slider-bar1, .slider-bar7 {
+    height:10px;
+  }
+  .slider-bar2 {
+    height:20px;
+  }
+  .slider-bar3, .slider-bar5 {
+    height:24px;
+  }
+  .slider-bar4 {
+    height:28px;
+  }
+  .slider-bar6 {
+    height:16px;
+  }
+  .slider-bar8 {
+    height:4px;
+  }
+}
