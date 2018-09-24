@@ -1,0 +1,137 @@
+.sidebarnav-wrapper{right:-320px;top:0px;bottom:0;background:$bgnd-white;z-index:112;width:320px;overflow-y:scroll;transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;position:fixed;line-height:normal}
+.sidebarnav-wrapper .side-menu-close, .sidebarnav-wrapper .close-icon-bar1, .sidebarnav-wrapper .close-icon-bar2, .sidebarnav-wrapper .side-manu-banner--overlay, .sidebarnav-wrapper .sidebar-nav--downarrow, .sidebarnav-wrapper .sidemenu--trigger, .sidebarnav-wrapper .play--eff, .sidebarnav-wrapper .banner-overlay{position:absolute;}
+.sidebarnav-wrapper .side-manu-banner-left, .sidebarnav-wrapper .side-manu-banner-right, .sidebarnav-wrapper .side-manu-banner{position:relative}
+.sidebarnav-wrapper .sidebar-nav-label{font-size:18px;margin-left:28px;top:-5px;color:$txt-lynch}
+.sidebarnav-wrapper .sidemenu-icon-box{width:20px;height:20px;}
+.sidebarnav-wrapper .sidemenu-icon-box img {width:100%;height:100%;}
+.sidebarnav-wrapper ul li a{padding:11px 15px 4px 23px;min-width:260px;color:$txt-lynch;display:block;transition:all .5s ease-in-out;-moz-transition:all .5s ease-in-out;-webkit-transition:all .5s ease-in-out;-ms-transition:all .5s ease-in-out;}
+.sidebarnav-wrapper ul li a:hover{background:$bgnd-black-squeeze;color:$txt-lynch}
+.sidebarnav-wrapper .icon-sidemenu-hotel{background-position:-77px -131px}
+.sidebarnav-wrapper .icon-sidemenu-all-inclusive{background-position:-100px -131px}
+.sidebarnav-wrapper .icon-sidemenu-holidays{background-position:182px 0}
+.sidebarnav-wrapper .icon-sidemenu-last-minute{background-position:-123px -131px}
+.sidebarnav-wrapper .icon-sidemenu-cruise{background-position:-1px 0}
+.sidebarnav-wrapper .icon-sidemenu-guides{background-position:159px -2px}
+.sidebarnav-wrapper .icon-sidemenu-cities{background-position:-215px -131px}
+.sidebarnav-wrapper .icon-sidemenu-my-booking{background-position:44px -2px}
+.sidebarnav-wrapper .icon-sidemenu-help{background-position:113px -2px}
+.sidebarnav-wrapper .icon-sidemenu-blog{background-position:136px -1px}
+.sidebarnav-wrapper .icon-sidemenu-uk-beaks{background-position:90px 0}
+.sidebarnav-wrapper .sidebar-nav-icon-cruise{background-position:-397px -1px}
+.sidebarnav-wrapper .icon-sidemenu-my-holidays{background-position:21px -3px}
+.sidebarnav-wrapper .icon-sidemenu-uk-reviews{background-position:67px -4px}
+.sidebarnav-wrapper .icon-sidemenu-search{background-position:207px 0}
+.sidebarnav-wrapper .sidebar-nav-link-active-bgnd{background:$bgnd-white}
+.sidebarnav-wrapper .side-manu-banner{min-height:134px;padding-top:18px;overflow:hidden;}
+.sidebarnav-wrapper .side-manu-banner--overlay{background-color:rgba(109,61,124,0.75);top:0;right:0;bottom:0;left:0;}
+.sidebarnav-wrapper .side-manu-banner-left{width:50px;height:50px;}
+.sidebarnav-wrapper .side-manu-banner-right{z-index:2;width:100%;padding-left:25px}
+.sidebarnav-wrapper .tth-logo-desktop{width:184px;height:23px;display:inline-block;background-position: -332px -4px;}
+.sidebarnav-wrapper .tth-logo-desktop img{object-fit:inherit;}
+.sidebarnav-wrapper .sidemenu-banner--offers{border-top:solid rgba(255,255,255,0.2) 2px;margin-top:5px;height:84px;width:100%;table-layout:fixed;display:table;}
+.sidebarnav-wrapper .sidemenu-banner--offers:hover .offers--label{opacity:0.7;}
+.sidebarnav-wrapper .sidemenu-banner--offers:hover .offers--image{bottom:-5px;}
+.sidebarnav-wrapper .account-label{margin-left:73px;border-top:solid #f3f4f5 2px;font-size:13px;margin-top:10px;padding:13px 0 10px 0;color:#acadae;display:block;}
+.sidebarnav-wrapper .offers--label{display:table-cell;vertical-align:middle;color:$txt-white;font-size:17px;}
+.sidebarnav-wrapper .offers--image{width:56px;height:65px;right:15px;bottom:0;background-size:54px}
+.sidebarnav-wrapper .side-menu-close{top:13px;right:10px;width:18px;height:18px;z-index:3;}
+.sidebarnav-wrapper .side-menu-close:hover{transform:rotate(90deg);}
+.sidebarnav-wrapper .close-icon-bar1, .sidebarnav-wrapper .close-icon-bar2{width:18px;height:2px;background:#fff;transform-origin:center;top:14px;left:5px;}
+.sidebarnav-wrapper .close-icon-bar1{transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);}
+.sidebarnav-wrapper .close-icon-bar2{transform:rotate(-45deg);-webkit-transform:rotate(-45deg);-ms-transform:rotate(-45deg);-o-transform:rotate(-45deg);}
+.sidebarnav-wrapper .search-for--search{margin-top:12px;}
+.sidebarnav-wrapper .sidebar-nav--downarrow{right:24px;top:13px;width:9px;height:9px;border-right:solid #acacad 2px;border-bottom:solid #acacad 2px;transform:rotate(45deg);-webkit-transform:rotate(45deg);-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);}
+.sidebarnav-wrapper .downarrow-active{transform:rotate(-135deg);-webkit-transform:rotate(-135deg);-ms-transform:rotate(-135deg);-moz-transform:rotate(-135deg);-o-transform:rotate(-135deg);top:17px;}
+.sidebarnav-wrapper .mobile-holidays-list{background:#f8f8f8;display:none}
+.sidebarnav-wrapper .mobile-holidays-list ul li a{padding:15px 15px 5px 67px;}
+.sidebarnav-wrapper .menu-bars-fix{width:18px;margin-top:8px;}
+.sidebarnav-wrapper ul{margin:0;padding:0;}
+.sidebarnav-wrapper .mobile-holidays-list ul{padding-bottom:0;}
+.sidebarnav-wrapper .mobile-holidays-list .sidebar-nav-label{font-size:17px;}
+.sidebarnav-wrapper .sidebarnav--list{min-height:100%;padding-bottom:100px;background-size:320px}
+.sidebarnav-wrapper .play--eff{background:rgba(57,190,209,0.5);border-radius:100%;transform:scale(0);-webkit-transform:scale(0);-moz-transform:scale(0);-ms-transform:scale(0);display:block}
+.sidebarnav-wrapper .anim--done{animation:ripple 0.65s linear;}
+.sidebarnav-wrapper .sidemenu--active, .sidebarnav-wrapper ul li a.sidemenu--active:hover{background-color:#3fbdd1;}
+.sidebarnav-wrapper .sidemenu--active .sidebar-nav-label{color:#fff}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-holidays{background-position:-55px -154px}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-hotel{background-position:-77px -154px}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-all-inclusive{background-position:-100px -154px}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-last-minute{background-position:-123px -154px}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-guides{background-position:-146px -154px}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-blog{background-position:-168px -154px}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-help{background-position:-192px -154px}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-cities{background-position:-215px -154px}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-uk-beaks{background-position:-238px -154px}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-uk-reviews{background-position:-261px -154px}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-my-booking{background-position:-284px -154px}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-my-holidays{background-position:-307px -154px}
+@keyframes ripple{100%{opacity:0;transform:scale(2.5);-moz-transform:scale(2.5);-webkit-transform:scale(2.5);}}
+@-webkit-keyframes ripple{100%{opacity:0;transform:scale(2.5);-moz-transform:scale(2.5);-webkit-transform:scale(2.5);}}
+@-moz-keyframes ripple{100%{opacity:0;transform:scale(2.5);-moz-transform:scale(2.5);-webkit-transform:scale(2.5);}}
+.sidebarnav-wrapper .sidebar-nav-label, .sidebarnav-wrapper .sidemenu-icon-box{position:relative}
+.sidebarnav-wrapper .sidebarnav--list ul li{position:relative;overflow:hidden;}
+.sidebarnav-wrapper .sidemenu-icon-box{display:inline-block;}
+.sidebarnav-wrapper .hide--scroll{height:100%;}
+.sidebarnav-wrapper .sidebar-nav--downarrow, .sidebarnav-wrapper .offers--image{transition:all .3s ease-in-out;-moz-transition:all .3s ease-in-out;-webkit-transition:all .3s ease-in-out;}
+.sidebarnav-wrapper .offers--image{position:absolute;}
+.sedebar-nav-overlay{position:fixed;background:rgba(0,0,0,0.6);z-index:111;top:0;bottom:0;left:0;right:0;display:none;}
+.sidebarnav-wrapper .sidemenu--active .icon-sidemenu-cruise{background-position:-8px -154px;}
+
+/* IE 11 */
+_:-ms-lang(x), .sidebarnav-wrapper{width:330px;right:-346px;}
+.sidebarnav-open{right:-17px;}
+
+/* header */
+.header {
+  &.bgnd-release {
+    background-color:$bgnd-butterfly;
+  }
+  .level2 {
+    .nav-item {
+      &:hover {
+        opacity:0.5;
+      }
+      &.hover-holidays, &.hover-guides {
+        opacity:1;
+      }
+    }
+    .dd-arrow {
+      width:16px;
+      height:10px;
+      z-index:2;
+      top:-4px;
+    }
+    .hover-lable {
+      z-index:2;
+    }
+  }
+  .holidays-active-link-bgnd {
+    width:120px;
+    left:-16px;
+  }
+  .guides-active-link-bgnd {
+    width:147px;
+    left:-11px;
+  }
+}
+
+
+
+@media (max-width:767px){
+.sidebarnav-wrapper{left:-320px;right:initial;display:block;width:265px;}
+.sidebarnav-open{left:0;right:initial;}
+.sidebarnav-wrapper .tth-logo-desktop{position:relative;}
+.sidebarnav-wrapper .sidebar-nav-label{margin-left:23px;}
+.sidebarnav-wrapper .side-menu-close{left:19px;}
+.sidebarnav-wrapper .sidemenu-banner--offers{width:241px;}
+.sidebarnav-wrapper .sidebar-nav--downarrow{right:20px;}
+.sidebarnav-wrapper .offers--image{right:17px;}
+.sidebarnav-wrapper .account-label{margin-left:67px;}
+.sidebarnav-wrapper .side-manu-banner-right{padding-left:67px;}
+.sidebarnav-wrapper .mobile-holidays-list .sidebar-nav-label {font-size:16px;}
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width:1024px) and (-webkit-min-device-pixel-ratio:1){
+.sidebarnav-open{right:0}
+.sidebarnav-wrapper ul li a:hover{background:transparent;}
+}

@@ -1,0 +1,289 @@
+.hotel-deals {
+  .content-header {
+    @include desktop-header-left();
+  }
+  .tripadvisor-eyes {
+    width:30px;
+    margin:-1px 6px 0 0;
+    img {
+      width:100%;
+    }
+  }
+  .deals-type {
+    font-size:15px;
+    .dstn-icon {
+      margin-right:6px;
+      width:16px;
+      height:16px;
+    }
+    img {
+      width:100%;
+    }
+    .dstn-label {
+      opacity:0.6;
+    }
+    .deals-type-col2 {
+      padding-top:3px;
+    }
+  }
+  .tth-from {
+    top:2px;
+  }
+  .txt-inc {
+    font-size:11px;
+    margin-top:-2px;
+  }
+  border-top: solid $b-silver 1px;
+  padding: 73px 0 70px 0;
+  .carousel-caption, .hotel-deal-name, .place, .gutter {
+    font-size: 15px;
+  }
+  .carousel-caption {
+    opacity: 0.7;
+    padding: 10px 0 20px 0;
+    overflow: hidden;
+  }
+  .price-info {
+    font-size: 11px;
+    padding-top: 37px;
+    @include opacity();
+  }
+  .hotel-deals-container {
+    width: 262px;
+    min-height: 295px;
+    border-radius: 2px;
+    overflow: hidden;
+    box-shadow: 0 1px 6px 0 rgba(111, 133, 159, 0.34);
+    padding: 18px 0 19px 0;
+    margin: 0 0 0 29px;
+    position:relative;
+    &:hover {
+      box-shadow: 0 12px 34px 0 $box-shadow-color;
+      color: inherit;
+      .viewdeal-btn {
+        background: $bgnd-emerald;
+        color: #fff;
+      }
+    }
+  }
+  .hotel-deals-residence {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.3px;
+    margin-bottom: 9px;
+    min-height: 44px;
+    @include multiline();
+  }
+  .hotel-deal-img img {
+    width: 100%;
+    height: 160px;
+  }
+  .tripadv-review-count {
+    font-size: 12px;
+  }
+  .gutter i {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  .place {
+    opacity: 0.7;
+    padding: 5px 0 7px 0;
+  }
+  .trip-advisor-main {
+    margin: 2px 0 5px 0;
+  }
+  .hotel-deals-price {
+    margin: 7px 0 0 0;
+    .from-price {
+      font-size:14px;
+    }
+  }
+  .gutter {
+    .tth-price {
+      font-size: 24px;
+    }
+    .tth-pp {
+      font-size: 14px;
+      top: 3px;
+      left: -5px;
+    }
+  }
+  .viewdeal-btn {
+    padding: 9px 10px;
+    background-color: $bgnd-emerald;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin: 12px 0 0 0;
+    color: $txt-white;
+    font-size: 14px;
+  }
+  .hotel-deal-img-name {
+    font-size: 13px;
+    right: 0;
+    bottom: 4px;
+    border-top-left-radius: 6px;
+    padding: 2px 8px 2px 9px;
+    letter-spacing: 0.2px;
+  }
+  .place-trpadvsr-min-height {
+    padding: 5px 0 2px 0;
+  }
+  .data-inner.gutter {
+    padding-top: 5px;
+  }
+  .hr-line {
+    height: 1px;
+    background: $bgnd-lynch;
+    opacity: 0.2;
+    margin: 10px 0;
+  }
+  .hotel-deals-residence, .hotel-deal-img, .place, .trip-advisor-main, .gutter {
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .heart-icon {
+    display: none;
+  }
+  .tth-asterisk {
+    top: 9px;
+    right: 0px;
+  }
+  .hotel-deal-last {
+    margin-right: 0;
+  }
+  .hotel-deal-name {
+    padding-bottom: 3px;
+  }
+  .hotel-deal-type {
+    padding-bottom: 8px;
+  }
+  .hotel-deals-carousel {
+    margin:0 0 0 -26px;
+  }
+
+  @include breakpoint(small-desktop) {
+
+        .hotel-deals-row-label {
+          padding: 0 40px;
+        }
+        .hotel-deal-img-name {
+          bottom: 0;
+        }
+        .hotel-deal-img {
+          img {
+            height: 100%;
+          }
+          height: 140px;
+        }
+        .hotel-deal-last {
+          margin-right: 0;
+        }
+        .hotel-deals-residence {
+          font-size: 16px;
+        }
+        .place {
+          font-size: 14px;
+        }
+        .gutter {
+          font-size: 13px;
+          .tth-price {
+            font-size: 20px;
+          }
+        }
+        .viewdeal-btn {
+          margin: 6px 0 0 0;
+        }
+        .gutter .tth-pp {
+          top: 2px;
+        }
+        .tth-asterisk {
+          top: 7px;
+        }
+        .hotel-deals-carousel {
+          margin: 0;
+        }
+
+  }
+
+  @include breakpoint(landscape-tablet) {
+
+    .hotel-deals-container {
+      margin: 0;
+    }
+    .content-middle {
+      padding: 0;
+    }
+    .owl-carousel .owl-wrapper-outer {
+      padding:0 0 30px 40px;
+    }
+    .viewdeal-btn {
+      margin: 12px 0 0 0;
+    }
+    .carousel-caption .deals-info {
+      width: 100%;
+      float: none;
+    }
+    .price-info {
+      padding: 0 0 0 40px;
+    }
+
+  }
+
+  @include breakpoint(portrait-tablet) {
+    .hotel-deals{
+      padding:40px 0 20px 0;
+    }
+  }
+
+@include breakpoint(mobile) {
+  .content-header {
+    @include mobile-header();
+  }
+  .see-all-btn {
+    @include sell-all-btn();
+  }
+  border: none;
+  padding: 0 0 20px 0;
+  .thin-lowdeposit {
+    border-bottom: solid $b-silver 1px;
+    padding: 24px 0 20px 0;
+    margin-bottom: 25px;
+    width: 100%;
+  }
+  .carousel-title {
+    font-size: 24px;
+  }
+  .carousel-caption {
+    padding-top: 5px;
+  }
+  .viewdeal-btn {
+    padding: 7px 13px;
+  }
+  .hotel-deals-price {
+    margin: 5px 0 0 0;
+  }
+  .hotel-deals-container {
+    &:hover {
+      box-shadow: 0 1px 6px 0 rgba(111, 133, 159, 0.34);
+    }
+    .viewdeal-btn {
+      background: $bgnd-emerald;
+      color:$txt-white;
+    }
+  }
+  .owl-carousel .owl-wrapper-outer {
+    padding: 0 20px 15px 20px;
+  }
+  .hotel-deals-row-label {
+    padding:0;
+  }
+  .price-info {
+    padding: 0 0 0 20px;
+    position: relative;
+    top: -5px;
+  }
+}
+
+}

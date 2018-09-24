@@ -1,0 +1,233 @@
+.sticky-nav {
+  top:66px;
+  left:0;
+  right:0;
+  padding:7px 0;
+  z-index:35;
+  &.sticky-pstn-fxd {
+      @include box-shadow(0px 1px 20px rgba(0,0,0,0.1));
+      animation:stickyNavDesktop 0.5s cubic-bezier(0, 0.9, 0.63, 0.93);
+      animation-fill-mode:forwards;
+      top:-60px;
+      position:fixed;
+  }
+  .nav-items {
+    a {
+      white-space:nowrap;
+      margin:0 40px 0 0;
+      letter-spacing:-0.2px;
+      font-size:15px;
+    }
+  }
+  .more {
+    display:flex;
+    top:6px;
+    right:0;
+    span {
+      width:4px;
+      height:4px;
+      background-color:rgba($bgnd-lynch, 0.7);
+      margin-right:2px;
+      @include border-radius(100px);
+    }
+    &:before {
+      content:'';
+      position:absolute;
+      width:25px;
+      height:25px;
+      //background-color:red;
+      //opacity:0.2;
+      top:-10px;
+      left:-5px;
+    }
+  }
+  .call-icon {
+    width:32px;
+    height:32px;
+    margin-right:10px;
+  }
+  .phone-number {
+    color: $txt-emerald;
+    line-height:19px;
+    min-width:165px;
+  }
+  .medium-label {
+    font-size:24px;
+    font-family:$font-bold;
+    letter-spacing:-0.1px;
+  }
+  .small-label {
+    font-size:15px;
+  }
+  .call-section {
+    border-left:dashed $grid-border 1px;
+    padding-left:15px;
+  }
+  .active-nav {
+    font-weight:bold;
+    &:before {
+      content:'';
+      position:absolute;
+      left:-10px;
+      right:-10px;
+      bottom:-18px;
+      height:3px;
+      background-color:$bgnd-cornflower-blue;
+    }
+  }
+  .subnav-section {
+    top:25px;
+    right:0;
+    padding:20px;
+    @include box-shadow(0px 1px 20px rgba(0,0,0,0.1));
+    .hidden-link {
+      margin-top:10px;
+    }
+    .hidden-link:first-child {
+      margin-top:0;
+    }
+    .link1, .link2, .link3 {
+      display:none;
+    }
+    .active-nav {
+      &:before {
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:-3px;
+        height:2px;
+      }
+    }
+  }
+
+  @include breakpoint(small-desktop) {
+    #subNavItems {
+      a:nth-child(7) {
+        display:none;
+      }
+    }
+    .subnav-section {
+      .link3 {
+        display:block;
+      }
+    }
+  }
+
+  @include breakpoint(portrait-tablet) {
+    #subNavItems {
+      max-width:476px;
+      overflow:hidden;
+      a:nth-child(6), a:nth-child(5) {
+        display:none;
+      }
+    }
+    .subnav-section {
+      .link1, .link2 {
+        display:block;
+      }
+    }
+  }
+  @include breakpoint(mobile) {
+    padding:17px 0 16px 0;
+    overflow-x:scroll;
+    max-width:100%;
+    top:50px;
+    #subNavItems {
+      max-width:inherit;
+      overflow:inherit;
+      a:nth-child(7), a:nth-child(6), a:nth-child(5) {
+        display:inline;
+      }
+    }
+    .call-section {
+      display:none;
+    }
+    .more {
+      display:none;
+    }
+    .active-nav {
+      &:before {
+        left:-16px;
+        right:-16px;
+        bottom:-16px;
+      }
+    }
+    &.sticky-pstn-fxd {
+        @include box-shadow(0px 1px 20px rgba(0,0,0,0.1));
+        animation:stickyNavMobile 1s cubic-bezier(0, 0.9, 0.63, 0.93);
+        top:0;
+        padding:0;
+        height:90px;
+        .nav-items {
+          padding-top:15px;
+        }
+        .call-section {
+          position:fixed;
+          top:44px;
+          left:0;
+          right:0;
+          padding-top:0;
+          border-top:solid #e2e2e2 1px;
+          padding:9px 0 0 0;
+          justify-content:center;
+          border-left:none;
+          display:-ms-flexbox;
+          display:flex;
+          animation:stickyPhoneNumber 1s cubic-bezier(0, 0.9, 0.63, 0.93);
+          -webkit-animation:stickyPhoneNumber 1s cubic-bezier(0, 0.9, 0.63, 0.93);
+          -moz-animation:stickyPhoneNumber 1s cubic-bezier(0, 0.9, 0.63, 0.93);
+          animation-fill-mode:forwards;
+        }
+        .phone-number {
+          display:flex;
+          display:-ms-flexbox;
+        }
+        .medium-label {
+          padding-right:12px;
+        }
+        .small-label {
+          display:none;
+        }
+        .text-2 {
+          font-size:15px;
+        }
+        .call-icon {
+          width:28px;
+          height:28px;
+        }
+        .active-nav {
+          &:before {
+            bottom:-12px;
+            left:-10px;
+            right:-10px;
+          }
+        }
+    }
+  }
+}
+
+
+@keyframes stickyNavDesktop {
+  0% {
+    top:-66px;
+  }
+  100% {
+    top:0;
+  }
+}
+@keyframes stickyNavMobile {
+  0% {
+    top:-120px;
+  }
+  100% {
+    top:0;
+  }
+}
+@keyframes stickyPhoneNumber {
+  0% {
+    top:-120px;
+  }
+  100% {
+    top:44px;
+  }
+}

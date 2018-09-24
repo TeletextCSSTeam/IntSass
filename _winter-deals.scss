@@ -1,0 +1,131 @@
+.winter-deals {
+  padding:50px 0 50px 0;
+  //background: url('https://resources.teletextholidays.co.uk/drupal/images/homepage/winter-deals.jpg') no-repeat;
+  background-size:cover;
+  background-position:right;
+  .large-heading {
+    font-size: 38px;
+    display: block;
+    padding-bottom: 35px;
+  }
+  .deal-box {
+    border-radius: 2px;
+    padding: 15px 0;
+    min-width: 262px;
+    min-height: 136px;
+    margin-left:25px;
+    &:first-child {
+      margin-left:0;
+    }
+  }
+  .deal-location span {
+    font-size: 15px;
+    &:first-child {
+      font-size: 20px;
+      display: block;
+      padding-bottom: 3px;
+    }
+  }
+  .gutter {
+    padding: 0 20px;
+  }
+  .deal-price {
+    border-top: solid #f4f4f4 1px;
+    padding: 15px 20px 0 20px;
+    margin-top: 15px;
+  }
+  button {
+    padding: 9px 10px;
+    font-size:15px;
+  }
+  .txt-from {
+    @include opacity();
+    color:$txt-default;
+    margin-right:4px
+  }
+  .tth-price {
+    font-size: 20px;
+    margin-right: 2px;
+  }
+  .tth-pp {
+    left: -4px;
+    font-size: 14px;
+    font-weight: normal;
+  }
+  .tth-asterisk {
+    top: 5px;
+    right: -1px;
+    font-size: 14px;
+  }
+  .txt-yellow {
+    color: #ffdd00;
+    font-size: 13px;
+  }
+  a:hover {
+    color: inherit;
+    box-shadow: 0 12px 34px 0 rgba(45, 60, 77, 0.7);
+  }
+
+  @include breakpoint(small-desktop) {
+    .content-middle {
+      padding:0;
+    }
+    .deal-box {
+      &:first-child {
+        margin-left:40px;
+      }
+    }
+  }
+
+  @include breakpoint(landscape-tablet) {
+    button {
+      font-size:11px;
+      margin-top: 5px;
+    }
+
+    .deal-location span {
+      &:first-child {
+        font-size: 17px;
+      }
+    }
+
+  }
+
+  @include breakpoint(mobile) {
+    text-align:left;
+    padding:30px 0;
+    .deal-box {
+      width:232px;
+      min-width:232px;
+      &:first-child {
+        margin-left:20px;
+      }
+    }
+    .large-heading {
+      font-size:24px;
+      padding:0 0 25px 20px;
+    }
+    .deal-location span {
+      font-size: 13px;
+      &:first-child {
+        font-size:17px;
+      }
+    }
+    button {
+      padding:7px 13px;
+      font-size:13px;
+      margin-top:5px;
+    }
+    .tth-asterisk {
+      top:5px;
+      right:0;
+    }
+  }
+  .gutter {
+    padding:0 14px;
+  }
+  .deal-price {
+    padding:15px 14px 0 14px
+  }
+
+}

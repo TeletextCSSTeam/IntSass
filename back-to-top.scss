@@ -1,0 +1,63 @@
+#back-to-top{
+    z-index:115;
+    bottom:30px;
+    right:15px;
+    width:40px;
+    background-position:-358px -2px;
+    height:40px;
+    opacity:.9;
+    cursor:pointer;
+    background-image:url(https://resources.teletextholidays.co.uk/drupal/images/sprite/test/v26/common-sprite.svgz);
+    position:fixed;
+    box-shadow:0 0 4px 0 rgba(0,0,0,.24),0 4px 8px 0 rgba(0,0,0,.12);
+    border-radius:100%
+}
+#back-to-top:hover{
+    opacity:.6
+}
+.show#back-to-top{
+    display:block
+}
+.mobile-widget-header.pstn-fxd{
+    top:0;
+    left:0;
+    right:0
+}
+.fixed-header .on-scroll-popup{
+    right:60px
+}
+.CookiesBanner #back-to-top,.CookiesBanner .on-scroll-popup{
+    bottom:80px
+}
+@media (max-width:767px){
+    #back-to-top{
+        bottom:30px
+    }
+    .CookiesBanner #back-to-top{
+        bottom:120px
+    }
+    .CookiesBanner .CookiesPolicyBanner{
+        padding:8px
+    }
+    .CookiesBanner .cookiesPolicyContent{
+        padding:0;
+        width:100%;
+        text-align:center;
+        line-height:16px!important;
+        margin:0
+    }
+    .CookiesBanner .CookiesPolicyBannerInner.container{
+        padding:0
+    }
+    .CookiesBanner .btn-acptCookie{
+        margin:8px 0 0;
+        font-size:13px;
+        padding:7px;
+        height:auto
+    }
+    .CookiesBanner .divacptCookie{
+        width:100%;
+        float:none;
+        text-align:center
+    }
+}

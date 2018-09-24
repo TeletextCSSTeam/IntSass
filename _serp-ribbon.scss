@@ -1,0 +1,166 @@
+@include breakpoint(when-desktop) {
+  .serp-ribbon{
+    height:60px;
+    box-shadow:0 2px 4px 0 rgba(111, 133, 159, 0.5);
+    padding-top:10px;
+    top:66px;
+    bottom:auto;
+    z-index:4;
+    .icon-search {
+      width:28px;
+      height:26px;
+      background-position: -43px 1px;
+      margin-right:10px;
+      background-repeat:no-repeat;
+    }
+    .tt-dropdown-menu {
+      @include tt-dropdown-menu();
+    }
+    .destination-name {
+      font-size:28px;
+      vertical-align:middle;
+      color:$txt-default;
+      width:80%;
+      @include truncate();
+      @include placeholder {
+        opacity:1;
+      }
+    }
+    .date-and-rooms {
+      font-size:18px;
+      .fa-caret-down {
+        font-size:12px;
+        padding:0 18px 0 5px;
+      }
+    }
+    .btn-update {
+      padding:12px 24px;
+      font-size:15px;
+      background-color:$bgnd-emerald;
+      color:$txt-white;
+      @include border-radius(2px);
+      @include shake();
+      &:hover {
+        background: darken($bgnd-emerald, 8%);
+      }
+      &.dis-button {
+        animation:inherit;
+      }
+    }
+    .dis-button {
+      @include btn-disabled();
+    }
+    .destination {
+      padding-top:5px;
+      width:45%;
+      .close--icon {
+        display:none;
+        top:13px;
+        @include slide-in-right();
+      }
+    }
+  }
+}
+
+@include breakpoint(when-landscape-tablet) {
+  .serp-ribbon{
+    .destination {
+      width:35%;
+      .close--icon {
+        top:9px;
+        animation:inherit;
+        right:-1px;
+        opacity:1;
+      }
+    }
+  }
+}
+
+@include breakpoint(when-portrait-tablet) {
+  .serp-ribbon{
+      .destination-name {
+        font-size:20px;
+        width:150px;
+      }
+      .destination {
+        width:30%;
+      }
+      .date-and-rooms {
+        font-size:15px;
+        .fa-caret-down {
+          padding:0 10px 0 5px;
+        }
+      }
+      .icon-search {
+        margin-right:0;
+      }
+      .btn-update {
+        padding:10px 15px;
+      }
+  }
+}
+
+@include breakpoint(mobile) {
+  .serp-ribbon{
+    background-color:$bgnd-black-squeeze;
+    position:relative;
+    @include box-shadow(0 2px 4px 0 $box-shadow-color);
+    padding-top:$padding-top-10;
+    .destination {
+      float:none;
+      .close--icon {
+        top:16px;
+      }
+    }
+    .tt-dropdown-menu {
+      @include tt-dropdown-menu();
+      margin-top:3px;
+    }
+    .date-and-rooms {
+      float:none;
+      padding:15px 0;
+      position:relative;
+      i {
+        font-size:12px;
+        padding-left:6px;
+      }
+    }
+    .basis-set {
+      display:block;
+      padding-top:6px;
+    }
+    .destination-name {
+      @include placeholder {
+        opacity:1;
+      }
+      height:50px;
+      width:100%;
+      padding:17px 50px 17px 55px;
+      font-size:20px;
+      @include box-shadow(0 1px 2px 0 rgba(0, 0, 0, 0.34));
+      @include truncate();
+    }
+    .icon-search {
+      width:21px;
+      height:21px;
+      background-position:-32px -25px;
+      margin-right:10px;
+      position:absolute;
+      left:16px;
+      top:15px;
+    }
+    .btn-update {
+      position: absolute;
+      top:16px;
+      right:0;
+      padding:8px 14px;
+      font-size:15px;
+      background-color:$bgnd-emerald;
+      color:$txt-white;
+      @include border-radius(2px);
+    }
+    .dis-button {
+      @include btn-disabled();
+    }
+  }
+}

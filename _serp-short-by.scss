@@ -1,0 +1,106 @@
+@include breakpoint(when-desktop) {
+  .short-by {
+    padding:30px 0 20px 0;
+    .results-num-label{
+      font-size:18px;
+    }
+    .float-right {
+      span {
+        @include border-radius(100px);
+        border:solid $b-default 1px;
+        font-size:12px;
+        padding:4px 12px;
+        cursor:pointer;
+        display:inline-block;
+        &:hover {
+          background-color:$bgnd-cornflower-blue;
+          border-color:$b-blue;
+          color:$txt-white;
+        }
+      }
+      .sortby-label {
+        border:none;
+        padding:4px 20px 4px 0;
+        font-size:14px;
+        cursor:default;
+        &:hover {
+          background-color:transparent;
+          color:inherit;
+        }
+      }
+      .bgnd-cornflower-blue {
+        border-color:$b-blue;
+        cursor:default;
+      }
+    }
+  }
+}
+
+@include breakpoint(when-landscape-tablet) {
+  .results-num-label{
+    font-size:18px;
+    padding:30px 0 20px 0;
+  }
+  .short-by {
+    padding: 15px 0 20px 0;
+    &.sticky {
+      position:fixed;
+      top:0;
+      right:0;
+      left:0;
+      z-index:112;
+      padding:15px 50px 15px 50px;
+    }
+    .filters-icon {
+      @include filters-icon();
+    }
+    .float-left {
+      .font-bold {
+        padding-left:10px;
+        font-size:20px;
+      }
+      .map-icon {
+        width:14px;
+        height:22px;
+        background-position:-54px -25px;
+      }
+    }
+    .separator {
+      margin:0 25px;
+      width:1px;
+      background-color:$line;
+      height:22px;
+    }
+    .results-num-label{
+      display:none;
+    }
+  }
+}
+
+@include breakpoint(when-portrait-tablet) {
+  .short-by {
+    &.sticky {
+      padding:15px 40px 15px 40px;
+    }
+    .float-left {
+      .font-bold {
+        padding-left:5px;
+        font-size:15px;
+      }
+    }
+    .separator {
+      width:0px;
+      margin:0 15px;
+    }
+  }
+}
+
+@include breakpoint(mobile) {
+  .results-num-label {
+    font-size:18px;
+    padding:25px 0 2px 0;
+  }
+  .short-by {
+     display:none;
+  }
+}

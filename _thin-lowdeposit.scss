@@ -1,0 +1,74 @@
+.thin-lowdeposit{padding:25px 0 15px 0;}
+.thin-lowdeposit .low-depst-rating-stars{padding:0;margin:0;}
+.thin-lowdeposit .low-depst-trust-rating ul li{width:15px;height:16px;float:left;border-radius:3px;-webkit-border-radius:3px;-moz-border-radius:3px;margin-right:2px;background:#d8d8d8;}
+.thin-lowdeposit .low-depst-trust-rating ul li.active{background:#73b143;}
+.thin-lowdeposit .call-us img{width:100%;}
+.thin-lowdeposit .low-depst-trust-rating ul li span{width:13px;height:13px;background-position:-177px -57px;display:inline-block;position:relative;left:1px;top:1px;}
+.thin-lowdeposit .totalTrustPilotRate, .thin-lowdeposit .feefo-main .feeforating{font-family:$font-bold;font-size:15px;color:#58595b;line-height:16px;padding-left:6px;}
+.thin-lowdeposit .low-depst-trust-logo{width:140px;height:18px;margin-top:3px;}
+.thin-lowdeposit .strip-column-label{font-size:16px;line-height:18px;}
+.thin-lowdeposit .strip-icon-happy{margin-right:7px;}
+.thin-lowdeposit .carousel-low-deposit i{font-size:27px;vertical-align:middle;margin-right:7px;}
+.thin-lowdeposit .carousel-low-deposit .payMonthly2, .thin-lowdeposit .deposit-options{margin-right:40px;}
+.thin-lowdeposit .carousel-low-deposit{padding:15px 0 30px 0}
+.thin-lowdeposit .call-to-book{vertical-align:top;top:-3px;font-size:32px;padding-right:60px;letter-spacing:-0.7px;}
+.thin-lowdeposit .new-trust{background-position:-2px -57px;height:17px;}
+.thin-lowdeposit .new-trust img{width:100%;}
+.thin-lowdeposit .feefo-main i{font-size:16px;}
+.thin-lowdeposit .feefo-icon{width:82px;height:20px;background-position:-3px -82px;margin-top:3px;}
+.thin-lowdeposit .low-dpst-logo, .thin-lowdeposit .pay-monthly, .thin-lowdeposit .atol-ttaicon{width:46px;height:45px;}
+.thin-lowdeposit .strip-column-label > span{display:block;}
+.thin-lowdeposit .call-us{line-height:18px;padding:0;}
+.thin-lowdeposit .call-us .inblock{vertical-align:middle;}
+.thin-lowdeposit .mbl-hide{display:block;}
+.thin-lowdeposit .mbl-show{display:none;}
+.thin-lowdeposit .strip-column-space{width:1px;background:#d8d8d8;height:30px;margin:0 22px;display:inline-block;}
+
+_:-ms-lang(x), .thin-lowdeposit .strip-column-space{margin:0 22px;}
+
+@media(max-width: 1140px) {
+  .thin-lowdeposit{text-align:center;}
+  .thin-lowdeposit .call-us .line-box{width:33px;height:33px;margin-right:12px;}
+  .thin-lowdeposit .call-us .line-icon-download{background-position:-184px -3px}
+  .thin-lowdeposit .call-us .line-icon-pay{background-position:-147px -3px;}
+  .thin-lowdeposit .call-us .line-icon-atol{background-position:-222px -2px}
+  .thin-lowdeposit .totalTrustPilotRate, .thin-lowdeposit .feefo-main .feeforating{font-size:13px;padding-left:2px;}
+  .thin-lowdeposit .new-trust{background-position:-323px -57px;height:14px;}
+  .thin-lowdeposit .feefo-main i{font-size:12px;}
+  .thin-lowdeposit .call-us .gutter-space{margin:0 10px;}
+  .thin-lowdeposit .low-depst-trust-rating ul li,.thin-lowdeposit .low-depst-trust-rating ul li span{width:13px;height:13px;}
+  .thin-lowdeposit .low-depst-trust-rating ul li span{background-position:-178px -59px}
+  .thin-lowdeposit .strip-column-space{margin:0 11px;}
+  .thin-lowdeposit .feefo-icon{margin-top:2px;}
+  .thin-lowdeposit .low-depst-trust-rating{text-align:left;}
+  .thin-lowdeposit .low-depst-trust-logo{margin-top:5px;}
+
+}
+
+@media(max-width: 991px) {
+  .thin-lowdeposit .low-depst-trust-rating ul li{width:18px;height:17px;}
+  .thin-lowdeposit .content-middle{text-align:center;}
+  .thin-lowdeposit .feefo-main i{font-size:17px;}
+  .thin-lowdeposit .totalTrustPilotRate, .thin-lowdeposit .feefo-main .feeforating{font-size:15px;}
+  .thin-lowdeposit .call-us{margin-top:25px;}
+  .thin-lowdeposit .s2{display:none;}
+  .thin-lowdeposit .new-trust{background-position:-152px -57px;height:19px;}
+  .thin-lowdeposit .low-depst-trust-rating ul li span{background-position:-177px -58px}
+  .thin-lowdeposit .feefo-icon{width:82px;height:20px;margin-top:5px;}
+  .thin-lowdeposit .low-depst-trust-rating ul li, .thin-lowdeposit .low-depst-trust-rating ul li span{height:14px;width:15px;}
+  .thin-lowdeposit .strip-column-space{margin:0 40px;}
+  .thin-lowdeposit .low-depst-trust-logo{width:163px;}
+}
+@media(max-width: 767px) {
+  .thin-lowdeposit{padding:0 0 18px 0;}
+  .thin-lowdeposit .low-depst-trust-rating ul li, .thin-lowdeposit .low-depst-trust-rating ul li span{height:14px;width:13px;}
+  .thin-lowdeposit .low-depst-trust-logo{height:14px;width:116px;}
+  .thin-lowdeposit .new-trust{background-position:-323px -57px;height:14px;}
+  .thin-lowdeposit .strip-column-space{margin:0 10px;}
+  .thin-lowdeposit .low-depst-trust-rating ul li span{background-position: -178px -57px;top:-2px;}
+  .thin-lowdeposit .feefo-main i{font-size:14px;}
+  .thin-lowdeposit .low-depst-rating-stars{vertical-align:middle;}
+  .thin-lowdeposit .mrgn-top{margin-top:18px;}
+  .thin-lowdeposit .callus-number{font-size:32px;letter-spacing:-0.3px;}
+
+}
