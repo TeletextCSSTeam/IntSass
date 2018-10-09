@@ -20,13 +20,13 @@
     }
   }
   .dstn-image {
-    margin-bottom:50px;
     height:280px;
     @include border-radius(2px);
     overflow:hidden;
   }
   .dstn-des {
     padding-right:25px;
+    margin-bottom:50px;
     h3, .content-title {
       font-size:28px;
       line-height:35px;
